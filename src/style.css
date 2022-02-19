@@ -1,0 +1,142 @@
+/* css常规初始化 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: #eee;
+}
+
+.globalHeader {
+  margin: 20px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchForm > input {
+  width: 100%;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.searchForm > button {
+  background: #0282b9;
+  padding: 0 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.searchForm > button > .classWrapper {
+  color: white;
+  font-size: 1.7em;
+}
+
+.siteList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.globalMain {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.siteList .site {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.link {
+  font-weight: bold;
+}
+
+.siteList > .lastLi {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  width: 120px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.siteList .site > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.addButton .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.site .delete {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+}
+
+.site:hover > .delete {
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 60px 0 100px;
+  }
+
+  .searchForm {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+}

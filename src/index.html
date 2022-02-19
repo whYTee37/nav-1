@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>前航</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css"> 
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header class="globalHeader">
+        <form action="https://www.baidu.com/s" method="get" class="searchForm">
+            <input type="text" name="wd">
+            <button type="submit">
+                <div class="classWrapper">
+                    <svg class="icon">
+                        <use xlink:href="#icon-search1"></use>
+                    </svg>
+                </div>
+            </button>
+
+        </form>
+    </header>
+
+    <main class="globalMain">
+        <ul class="siteList">
+            <li class="lastLi">
+                <div class="addButton">
+                    <div class="svgWrapper">
+                        <svg class="icon">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                <div class="text">新增网页</div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    
+    <script src="//at.alicdn.com/t/font_3192884_qlkc3xg35ji.js"></script>            <!-- 引入icon -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>      <!-- 引入jQuery -->
+    <script src="main.js"></script>
+    <!-- <script>
+        let currentWeb2 = xObject || [
+    {logo: 'D', url: 'https://developer.mozilla.org/zh-CN/'},
+    {logo: 'W', url: 'https://www.w3.org/'}
+  ]
+         document.getElementsByClassName("addButton")[0].ontouchstart = () => {
+    console.log("i am in IOS now")
+    let url = window.prompt('新增导航网址:');
+    if (url.indexOf('http') !== 0) {
+      url = 'https://' + url
+    }
+    // console.log(url)
+    currentWeb2.push({
+        logo: '1',//我们取新增网站的logo为用户输入url经过simplify之后的第一个字母（大写）
+        url: url
+    });
+    render();
+}
+    </script> -->
+</body>
+</html>
