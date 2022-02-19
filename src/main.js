@@ -10,7 +10,7 @@ const xObject = JSON.parse(xString);
 // let iosAdd = document.getElementsByClassName("globalMain")[0];
 
 let currentWeb = xObject || [
-    {logo: 'D', url: 'https://developer.mozilla.org/zh-CN/'},
+    {logo: 'B', url: 'https://www.baidu.com/'},
     {logo: 'W', url: 'https://www.w3.org/'}
   ]
 
