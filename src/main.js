@@ -68,16 +68,16 @@ window.onbeforeunload = () => {
     document.getElementsByClassName("text")[0].remove();
 *这个现象使得“无法监听移动端的touchstart事件”直接多出了很多种可能，毕竟一个简单的remove函数在PC和移动端生效结果都不同*/
 
-  document.getElementsByClassName("addButton")[0].ontouchstart = () => {
-    console.log("i am in IOS now")
-    let url = window.prompt('新增导航网址:');
-    if (url.indexOf('http') !== 0) {
-      url = 'https://' + url
-    }
-    console.log(url)
-    currentWeb.push({
-        logo: simplifyUrl(url)[0].toUpperCase(),//我们取新增网站的logo为用户输入url经过simplify之后的第一个字母（大写）
-        url: url
-    });
-    render();
-}
+//   document.getElementsByClassName("addButton")[0].ontouchstart = () => {
+//     console.log("i am in IOS now")
+//     let url = window.prompt('新增导航网址:');
+//     if (url.indexOf('http') !== 0) {
+//       url = 'https://' + url
+//     }
+//     console.log(url)
+//     currentWeb.push({
+//         logo: simplifyUrl(url)[0].toUpperCase(),//我们取新增网站的logo为用户输入url经过simplify之后的第一个字母（大写）
+//         url: url
+//     });
+//     render();
+// }
